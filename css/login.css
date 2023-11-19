@@ -1,0 +1,78 @@
+section.news {
+  padding: 50px;
+}
+section.news .article-link img {
+  max-height: 170px;
+}
+section.news .article-link .article-text h5 {
+  font-size: 17px;
+}
+section .button {
+  background-color: #B80000;
+  color: #fff;
+  border: 1px solid #B80000;
+  border-radius: 5px;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+section .button:hover {
+  background-color: #fff;
+  color: #B80000;
+  border: 1px solid #B80000;
+}
+
+.login-container {
+  margin-top: 110px;
+  margin-bottom: 60px;
+  max-width: 90%;
+}
+
+.form-login-reg {
+  background-color: #fff;
+  padding: 20px;
+  padding-top: 25px;
+  box-shadow: #dddada 0px 0px 20px;
+  border: 1px solid #b1aeae;
+  border-top: none;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+  margin-right: 5px;
+  font-size: 18px;
+  color: #1b1b1b;
+  border-radius: 5px;
+}
+
+.nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #B80000;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.btn-floating {
+  font-size: 1.25rem;
+}
+
+.button {
+  background-color: #B80000;
+  color: #fff;
+  border: 1px solid #B80000;
+  border-radius: 5px;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+.button:hover {
+  background-color: #fff;
+  color: #B80000;
+  border: 1px solid #B80000;
+}
+
+/*# sourceMappingURL=login.css.map */

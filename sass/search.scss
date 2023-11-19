@@ -1,0 +1,95 @@
+@import './variables';
+@import './mixins';
+
+.input-group,
+.search-form {
+    width: 100%;
+}
+
+
+
+.search {
+    &-form {
+        margin-top: 120px;
+        
+        /* Align items vertically in the middle */
+        
+
+        /* Optional: Adds some space between the input and the button */
+        input {
+          
+            /* Make the input field take up as much space as possible */
+            
+            /* Optional: Adds some space to the right of the input field */
+            padding: 8px 10px;
+            border: $gray-color 1px solid;
+            border-radius: 5px;
+        }
+        button {
+            @include button($main-color, $white-color, $main-color);
+        margin-right: 10px;
+        font-size: 20px;
+        
+        }
+
+    
+    }
+
+
+
+
+&-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    select {
+        padding: 6px 10px;
+        border: $gray-color 1px solid;
+        border-radius: 5px;
+    }
+
+
+}
+
+&-articles {
+    .article-card {
+        border-bottom: $light-gray-color 1px solid;
+        padding-bottom: 15px;
+
+        time {
+            color: $gray-color;
+        }
+        h4{
+            @media (max-width: 768px) {
+                margin-top: 10px;
+            }
+        }
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            color: $black-color;
+
+        }
+    }
+        .article-link {
+            &:hover {
+                color: $main-color;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+
+
+.more-results {
+    .button {
+        @include button($main-color, $white-color, $main-color);
+    }
+}

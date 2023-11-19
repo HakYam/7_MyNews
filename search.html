@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع اخباري">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>صفحة البحث </title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">أخباري</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="news-category.html">أخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news-category.html">تكنولوجيا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news-category.html">اقتصاد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news-category.html">رياضة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news-category.html">حاسوب</a>
+                        </li>
+                    </ul>
+                    <div class="login">
+                        <i class="fa-solid fa-user mt-1 d-none d-md-block"></i>
+                        <div class="login-container ">
+                            <a href="login.html" class="button">تسجيل الدخول</a>
+                        </div>
+                    </div>
+
+                    <div class="login">
+                        <a href="login.html">
+                            <i class="fa-solid fa-user mt-1 d-block d-md-none"></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ">
+                    
+                        <form action="./search.html" class="search-form input-group">
+                            <div class="input-group">
+                                <input name="searchtext" value="" class="form-control" type="text" placeholder="كلمة البحث">
+                                
+                                   <button class="btn " type="submit" id="addressSearch">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                   </button>
+                                
+                            </div>
+                        </form>
+                    
+                    <div class="search-line">
+                        <span>أفضل 50 نتيجة</span>
+                        <div class="ranking">
+                            <span>التصنيف: </span>
+                            <select name="ranking" id="ranking">
+                                <option value="1">الكل</option>
+                                <option value="2">التكنولوجيا</option>
+                                <option value="3">الاقتصاد</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                    <div class="search-articles" id="search-articles">
+                        <div class="article-card mt-3">
+                            <a href="article.html" class="article-link">
+                                <div class="row">
+                                    <div class="col-md-4">
+
+                                        <img src="./images/picture-12.jpg" alt="وصف الصورة">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4>لوريم أيبسوم (Lorem Ipsum)</h4>
+                                        <p>
+                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليظهر
+                                            ويكون
+                                            فيصوره
+                                        </p>
+                                        <time datatime="2022-01-01">2022-01-01 الخميس</time>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-card mt-3">
+                            <a href="article.html" class="article-link">
+                                <div class="row">
+                                    <div class="col-md-4">
+
+                                        <img src="./images/picture-16.jpg" alt="وصف الصورة">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4>لوريم أيبسوم (Lorem Ipsum)</h4>
+                                        <p>
+                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليظهر
+                                            ويكون
+                                            فيصوره                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليظهر
+                                            ويكون
+                                            فيصوره                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليظهر
+                                            ويكون
+                                            فيصوره
+                                        </p>
+                                        <time datatime="2022-01-01">2022-01-01 الخميس</time>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article-card mt-3">
+                            <a href="article.html" class="article-link">
+                                <div class="row">
+                                    <div class="col-md-4">
+
+                                        <img src="./images/picture-15.jpg" alt="وصف الصورة">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4>لوريم أيبسوم (Lorem Ipsum)</h4>
+                                        <p>
+                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليظهر
+                                            ويكون
+                                            فيصوره
+                                        </p>
+                                        <time datatime="2022-01-01">2022-01-01 الخميس</time>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-card mt-3">
+                            <a href="article.html" class="article-link">
+                                <div class="row">
+                                    <div class="col-md-4">
+
+                                        <img src="./images/picture-14.jpg" alt="وصف الصورة">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4>لوريم أيبسوم (Lorem Ipsum)</h4>
+                                        <p>
+                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليظهر
+                                            ويكون
+                                            فيصوره
+                                        </p>
+                                        <time datatime="2022-01-01">2022-01-01 الخميس</time>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-card mt-3">
+                            <a href="article.html" class="article-link">
+                                <div class="row">
+                                    <div class="col-md-4">
+
+                                        <img src="./images/picture-13.jpg" alt="وصف الصورة">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4>لوريم أيبسوم (Lorem Ipsum)</h4>
+                                        <p>
+                                            لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليظهر
+                                            ويكون
+                                            فيصوره
+                                        </p>
+                                        <time datatime="2022-01-01">2022-01-01 الخميس</time>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    
+                </div>
+                <div class="text-center my-5 more-results">
+                    <a href="article.html" class="btn button ">عرض المزيد</a>
+
+                </div>
+                
+            </div>
+    </main>
+
+    <footer>
+        <div class="container ">
+            <div class="row g-0">
+                <div class="col-md-3 col-sm-6 ">
+                    <h4 class="footer-title">من نحن</h4>
+                    <ul class="list-unstyled">
+                        <li class="mt-1"><a href="#" class="link-unstyled">من نحن</a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled">سياسة الخصوصية </a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled"> الشروط والاحكام</a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled">عن المنصة </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h4 class="footer-title">تواصل معنا </h4>
+                    <ul class="list-unstyled">
+                        <li class="mt-1"><a href="#" class="link-unstyled"> الاعلانات</a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled"> الصحافة </a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled"> وضائف شاغرة </a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled">كن مراسل </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <h4 class="footer-title"> وسائل التواصل </h4>
+                    <div class="pt-2 social-icon">
+                        <a href="#"> <i class="fa-brands fa-facebook fa-lg me-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter fa-lg me-2"></i> </a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-lg me-2"></i> </a>
+                        <a href="#"><i class="fa-brands fa-tiktok fa-lg me-2"></i> </a>
+                    </div>
+
+                    <div>
+                        <p>
+                            <br>تركيا - اسطنبول - الجسر الرابع
+                            <br>588 - 9998 - 528
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h4 class="footer-title"> أخباري</h4>
+                    <div class="subscribe">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="ادخل بريدك الالكتروني"
+                                aria-label="Recipient's email" aria-describedby="button-addon2">
+                            <button class="btn btn-light" type="button" id="button-addon2">اشترك</button>
+                        </div>
+                    </div>
+
+                    <p>
+
+                        تصميم المهندس : هاكان يمان
+                        <br> كافة الحقوق محفوظة© <span id="year"> </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<script src="js/index.js"></script>
+
+</html>

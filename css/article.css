@@ -1,0 +1,151 @@
+section.news {
+  padding: 50px;
+}
+section.news .article-link img {
+  max-height: 170px;
+}
+section.news .article-link .article-text h5 {
+  font-size: 17px;
+}
+section .button {
+  background-color: #B80000;
+  color: #fff;
+  border: 1px solid #B80000;
+  border-radius: 5px;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+section .button:hover {
+  background-color: #fff;
+  color: #B80000;
+  border: 1px solid #B80000;
+}
+
+hr {
+  border-color: #b1aeae;
+}
+
+.article-header {
+  margin-top: 100px;
+}
+
+.header-category {
+  font-size: 20px;
+  color: #b1aeae;
+  margin-bottom: 10px;
+}
+.header-title {
+  font-size: 40px;
+  color: #1b1b1b;
+  margin-bottom: 15px;
+}
+
+.article-main .article-subtitle {
+  color: #b1aeae;
+}
+.article-main .article-datetime {
+  color: #1b1b1b;
+  padding: 10px 20px;
+  background-color: rgba(27, 27, 27, 0.1);
+  margin-bottom: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+.article-main .article-datetime time::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 100%;
+  background-color: #B80000;
+  top: 0;
+  right: 0;
+}
+.article-main .article-body p {
+  font-size: 18px;
+  color: #1b1b1b;
+}
+.article-main .article-body h2 {
+  color: #1b1b1b;
+}
+.article-main .article-body .keyword {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+}
+.article-main .article-body .sugessted-stories {
+  background-color: rgba(27, 27, 27, 0.1);
+}
+.article-main .article-body .sugessted-stories-img {
+  width: 130px;
+  height: 110px;
+}
+.article-main .article-body .sugessted-stories .reb-bg {
+  background-color: #B80000;
+}
+.article-main .article-body .sugessted-stories .flex-grow-1 p {
+  color: #F8F9FA;
+  padding-top: 9px;
+}
+
+.comments {
+  margin-bottom: 25px;
+}
+.comments .comment-textarea {
+  border: #b1aeae 1px solid;
+  border-radius: 5px;
+  height: 80px !important;
+  font-size: 18px;
+}
+.comments .comment-cards {
+  margin-top: 25px;
+}
+.comments .comment-cards .user-photo img {
+  clip-path: circle();
+}
+.comments .comment-cards .user-name {
+  font-size: 22px;
+  color: #B80000;
+  font-weight: bold;
+}
+.comments .comment-cards .comment-text {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  position: relative;
+  margin-right: -10px;
+}
+.comments .comment-cards .comment-text::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 20px 0;
+  rotate: 180deg;
+  border-color: transparent #f0f0f0 transparent transparent;
+  top: 30px;
+  right: -15px;
+}
+.comments .comment-cards p {
+  padding-top: 15px;
+}
+
+.most-read-news-articles {
+  position: relative;
+}
+.most-read-news-articles .overlay {
+  position: absolute;
+  background-color: rgba(27, 27, 27, 0.7);
+  bottom: 0;
+  padding: 15px;
+  right: 0;
+}
+.most-read-news-articles .overlay i {
+  color: #fff;
+}
+.most-read-news-articles .overlay h5 {
+  color: #fff;
+}
+
+/*# sourceMappingURL=article.css.map */

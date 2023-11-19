@@ -1,0 +1,170 @@
+@import './variables';
+@import './mixins';
+
+hr {
+    border-color: $gray-color;
+
+
+}
+
+.article-header {
+    margin-top: 100px;
+}
+
+.header {
+    &-category {
+        font-size: 20px;
+        color: $gray-color;
+        margin-bottom: 10px;
+    }
+
+    &-title {
+        font-size: 40px;
+        color: $black-color;
+        margin-bottom: 15px;
+    }
+}
+
+.article-main {
+    .article {
+        &-subtitle {
+            color: $gray-color;
+        }
+
+        &-datetime {
+            color: $black-color;
+            padding: 10px 20px;
+            background-color: rgba($black-color, 0.1);
+            margin-bottom: 20px;
+            margin-top: 10px;
+            position: relative;
+
+            time {
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 10px;
+                    height: 100%;
+                    background-color: $main-color;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+
+        &-body {
+            p {
+                font-size: 18px;
+                color: $black-color;
+            }
+
+            h2 {
+                color: $black-color;
+            }
+
+            .keyword {
+                background-color: $light-gray-color;
+                padding: 10px 15px;
+            }
+
+            .sugessted-stories {
+                background-color: rgba($black-color, 0.1);
+                
+                &-img{
+                    width: 130px;
+                    height: 110px;
+                }
+                .reb-bg {
+                    background-color: $main-color;
+                }
+
+                .flex-grow-1 {
+                    p {
+                        color: $header-color;
+                        padding-top: 9px;
+                    }
+                    
+                }
+
+            }
+        }
+    }
+}
+
+.comments {
+    margin-bottom: 25px;
+
+    .comment {
+        &-textarea {
+            border: $gray-color 1px solid;
+            border-radius: 5px;
+            height: 80px !important;
+            font-size: 18px;
+        }
+
+        &-cards {
+            margin-top: 25px;
+
+            .user-photo {
+                img {
+                    clip-path: circle();
+                }
+            }
+
+            .user-name {
+
+                font-size: 22px;
+                color: $main-color;
+                font-weight: bold;
+
+            }
+
+            .comment-text {
+
+                padding: 20px;
+                background-color: $light-gray-color;
+                border-radius: 10px;
+                position: relative;
+                margin-right: -10px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 20px 20px 20px 0;
+                    rotate: 180deg;
+                    border-color: transparent $light-gray-color transparent transparent;
+                    top: 30px;
+                    right: -15px;
+                }
+            }
+
+            p {
+                padding-top: 15px;
+            }
+
+
+        }
+
+    }
+}
+
+.most-read-news-articles {
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        background-color: rgba($black-color, 0.7);
+        bottom: 0;
+        padding: 15px;
+        right: 0;
+        i{
+            color: $white-color;
+        }
+        h5 {
+            color: $white-color;
+        }
+    }
+}

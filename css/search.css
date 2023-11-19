@@ -1,0 +1,109 @@
+section.news {
+  padding: 50px;
+}
+section.news .article-link img {
+  max-height: 170px;
+}
+section.news .article-link .article-text h5 {
+  font-size: 17px;
+}
+section .button {
+  background-color: #B80000;
+  color: #fff;
+  border: 1px solid #B80000;
+  border-radius: 5px;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+section .button:hover {
+  background-color: #fff;
+  color: #B80000;
+  border: 1px solid #B80000;
+}
+
+.input-group,
+.search-form {
+  width: 100%;
+}
+
+.search-form {
+  margin-top: 120px;
+  /* Align items vertically in the middle */
+  /* Optional: Adds some space between the input and the button */
+}
+.search-form input {
+  /* Make the input field take up as much space as possible */
+  /* Optional: Adds some space to the right of the input field */
+  padding: 8px 10px;
+  border: #b1aeae 1px solid;
+  border-radius: 5px;
+}
+.search-form button {
+  background-color: #B80000;
+  color: #fff;
+  border: 1px solid #B80000;
+  border-radius: 5px;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.search-form button:hover {
+  background-color: #fff;
+  color: #B80000;
+  border: 1px solid #B80000;
+}
+.search-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.search-line select {
+  padding: 6px 10px;
+  border: #b1aeae 1px solid;
+  border-radius: 5px;
+}
+.search-articles .article-card {
+  border-bottom: #f0f0f0 1px solid;
+  padding-bottom: 15px;
+}
+.search-articles .article-card time {
+  color: #b1aeae;
+}
+@media (max-width: 768px) {
+  .search-articles .article-card h4 {
+    margin-top: 10px;
+  }
+}
+.search-articles .article-card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #1b1b1b;
+}
+.search-articles .article-link:hover {
+  color: #B80000;
+  text-decoration: underline;
+}
+
+.more-results .button {
+  background-color: #B80000;
+  color: #fff;
+  border: 1px solid #B80000;
+  border-radius: 5px;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.more-results .button:hover {
+  background-color: #fff;
+  color: #B80000;
+  border: 1px solid #B80000;
+}
+
+/*# sourceMappingURL=search.css.map */

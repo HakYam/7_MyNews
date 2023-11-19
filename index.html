@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع اخباري">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>موقع أخباري</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">أخباري</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="news-category.html">أخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news-category.html">تكنولوجيا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news-category.html">اقتصاد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news-category.html">رياضة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news-category.html">حاسوب</a>
+                        </li>
+                    </ul>
+                    <div class="login">
+                        <i class="fa-solid fa-user mt-1 d-none d-md-block"></i>
+                        <div class="login-container ">
+                            <a href="login.html" class="button">تسجيل الدخول</a>
+                        </div>
+                    </div>
+
+                    <div class="login">
+                        <a href="login.html">
+                            <i class="fa-solid fa-user mt-1 d-block d-md-none"></i>
+                        </a>
+
+                    </div>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="بحث" aria-label="Search">
+                        <a href="./search.html" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="header-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="carousel-news">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1">1</button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3">3</button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <a href="article.html">
+                                        <img src="./images/picture-1.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-text">
+                                          <h3>لوريوم سبيوم: لوريم إيبسوم هو ببساطة نص شكلي</h3>
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="article.html">
+                                        <img src="./images/picture-4.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-text">
+                                          <h3>لوريوم سبيوم: لوريم إيبسوم هو ببساطة نص شكلي</h3>
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <a href="article.html">
+                                        <img src="./images/picture-7.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-text">
+                                          <h3>لوريوم سبيوم: لوريم إيبسوم هو ببساطة نص شكلي</h3>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header-articles">
+                            <a href="article.html" class="article-link">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img src="./images/picture-12.jpg" alt="...">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="article-text">
+                                            <span class="article-category">
+                                                اخبار
+                                            </span>
+                                            <h5 class="article-title">لوريم إيبسوم هو ببساطة نص شكلي ويُستخدم في صناعات
+                                                المطابع ودور النشر حسوب والأكاديمية، لوريوم أيبسويوم</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="article.html" class="article-link">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img src="./images/picture-13.jpg" alt="...">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="article-text">
+                                            <span class="article-category">
+                                                اخبار
+                                            </span>
+                                            <h5 class="article-title">لوريم إيبسوم هو ببساطة نص شكلي ويُستخدم في صناعات
+                                                المطابع ودور النشر حسوب والأكاديمية، لوريوم أيبسويوم</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="article.html" class="article-link">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img src="./images/picture-11.jpg" alt="...">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="article-text">
+                                            <span class="article-category">
+                                                اخبار
+                                            </span>
+                                            <h5 class="article-title">لوريم إيبسوم هو ببساطة نص شكلي ويُستخدم في صناعات
+                                                المطابع ودور النشر حسوب والأكاديمية، لوريوم أيبسويوم</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="news">
+            <div class="container">
+                <div class="section-title">
+                    <h2>آخر الاخبار</h2>
+                </div>
+                <div class="row">
+                    <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-12.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">أخبار</span>
+                                <h5 class="article-title">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                                    هي الشكل وليس المحتوى)</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-13.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">أخبار</span>
+                                <h5 class="article-title">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                                    هي الشكل وليس المحتوى)</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-14.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">أخبار</span>
+                                <h5 class="article-title">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                                    هي الشكل وليس المحتوى)</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-15.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">أخبار</span>
+                                <h5 class="article-title">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                                    هي الشكل وليس المحتوى)</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-16.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">أخبار</span>
+                                <h5 class="article-title">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                                    هي الشكل وليس المحتوى)</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-17.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">أخبار</span>
+                                <h5 class="article-title">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                                    هي الشكل وليس المحتوى)</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-10.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">أخبار</span>
+                                <h5 class="article-title">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                                    هي الشكل وليس المحتوى)</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-11.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">أخبار</span>
+                                <h5 class="article-title">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                                    هي الشكل وليس المحتوى)</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center my-5">
+                    <a href="article.html" class="btn button">عرض المزيد</a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="most-read">
+            <div class="container">
+                <h2 class="section-title">المقالات الشائعة</h2>
+                <div class="card-news">
+                    <a href="article.html">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="images/picture-12.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="card-text">
+                                    <h4>لوريم أيبسوم(Lorem Ipsum) هو ببساطة نص شكلي</h4>
+                                    <p>لوريم أيبسوم(Lorem Ipsum) هو ببساطة نص شكلي لوريم أيبسوم(Lorem Ipsum) هو ببساطة
+                                        نص شكلي لوريم أيبسوم(Lorem Ipsum) هو ببساطة نص شكلي>لوريم أيبسوم(Lorem Ipsum) هو
+                                        ببساطة نص شكلي</p>
+                                    <time datetime="2023-11-09">الخميس 2023-11-09 </time>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-news">
+                    <a href="article.html">
+                        <div class="card-img">
+                            <img src="images/picture-13.jpg" alt="">
+                        </div>
+                        <div class="card-text pt-3">
+                            <h4>لوريم أيبسوم(Lorem Ipsum) هو ببساطة نص شكل22ي</h4>
+                            <time datetime="2023-11-09">الخميس 2023-11-10 </time>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-news">
+                    <a href="article.html">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="images/picture-15.jpg" alt="">
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="card-text">
+                                    <h4>لوريم أيبسوم(Lorem Ipsum) هو ببساطة نص شكلي</h4>
+                                    <p>لوريم أيبسوم(Lorem Ipsum) هو ببساطة نص شكلي لوريم أيبسوم(Lorem Ipsum) هو ببساطة
+                                        نص شكلي لوريم أيبسوم(Lorem Ipsum) هو ببساطة نص شكلي>لوريم أيبسوم(Lorem Ipsum) هو
+                                        ببساطة نص شكلي</p>
+                                    <time datetime="2023-11-09">الخميس 2023-11-09 </time>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </section>
+
+        <section class="opinions">
+            <div class="container">
+                <h2 class="section-title">
+                    مقالات الرأي
+                </h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="./article.html">
+                            <div class="opinions-card">
+                                <h5>لوريم ايبسوم دولار سيت أميت كونسيكتيتور</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="...">
+                                    <span>أحمد محمد</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="./article.html">
+                            <div class="opinions-card">
+                                <h5>لوريم ايبسوم دولار سيت أميت كونسيكتيتور</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_7.jpg" alt="...">
+                                    <span>أحمد محمد</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="./article.html">
+                            <div class="opinions-card">
+                                <h5>لوريم ايبسوم دولار سيت أميت كونسيكتيتور</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_6.jpg" alt="...">
+                                    <span>أحمد محمد</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="./article.html">
+                            <div class="opinions-card">
+                                <h5>لوريم ايبسوم دولار سيت أميت كونسيكتيتور</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_5.jpg" alt="...">
+                                    <span>أحمد محمد</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="./article.html">
+                            <div class="opinions-card">
+                                <h5>لوريم ايبسوم دولار سيت أميت كونسيكتيتور</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_4.jpg" alt="...">
+                                    <span>أحمد محمد</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="./article.html">
+                            <div class="opinions-card">
+                                <h5>لوريم ايبسوم دولار سيت أميت كونسيكتيتور</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="...">
+                                    <span>أحمد محمد</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="./article.html">
+                            <div class="opinions-card">
+                                <h5>لوريم ايبسوم دولار سيت أميت كونسيكتيتور</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_3.jpg" alt="...">
+                                    <span>أحمد محمد</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="./article.html">
+                            <div class="opinions-card">
+                                <h5>لوريم ايبسوم دولار سيت أميت كونسيكتيتور</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_2.jpg" alt="...">
+                                    <span>أحمد محمد</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="container">
+                <h2 class="section-title">فيديو</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="./images/picture-13.jpg" alt="...">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">
+                                        لوريوم أيكسسيبتيور الأحمد نص
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="./images/picture-10.jpg" alt="...">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">
+                                        لوريوم أيكسسيبتيور الأحمد نص
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="./images/picture-11.jpg" alt="...">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">
+                                        لوريوم أيكسسيبتيور الأحمد نص
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="./images/picture-12.jpg" alt="...">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">
+                                        لوريوم أيكسسيبتيور الأحمد نص
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="./images/picture-14.jpg" alt="...">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">
+                                        لوريوم أيكسسيبتيور الأحمد نص
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="./images/picture-15.jpg" alt="...">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">
+                                        لوريوم أيكسسيبتيور الأحمد نص
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="./images/picture-16.jpg" alt="...">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">
+                                        لوريوم أيكسسيبتيور الأحمد نص
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="./images/picture-17.jpg" alt="...">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">
+                                        لوريوم أيكسسيبتيور الأحمد نص
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="latest-news">
+            <div class="container">
+                <h2 class="section-title mb-5">
+                    آخر ما حرر
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="./article.html" class="article-link">
+                            <img src="./images/picture-13.jpg" alt="وصف الصورة">
+                            <div class="card-text mt-3">
+                                <span class="article-category">اقتصاد</span>
+                                <h5 class="article-title">لوريم أيبسوم (Lorem Ipsum) هو ببساطة نص شكلي</h5>
+                                <p>لوريم أيبسوم (Lorem Ipsum) هو ببساطة نص شكلي لوريم أيبسوم (Lorem Ipsum) هو ببساطة نص
+                                    شكلي لوريم أيبسوم (Lorem Ipsum) هو ببساطة نص شكلي.</p>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="./article.html" class="article-link">
+                                    <img src="./images/picture-12.jpg" alt="وصف الصورة">
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="./article.html" class="article-link">
+                                    <div class="card-text">
+                                        <span class="article-category">اقتصاد</span>
+                                        <h5 class="article-title">لوريم أيبسوم (Lorem Ipsum) هو ببساطة نص شكلي 1</h5>
+                                    </div>
+                            </div>
+                        </div>
+                        </a>
+
+                        <div class="row mt-3">
+
+                            <div class="col">
+                                <a href="./article.html" class="article-link">
+                                    <img src="./images/picture-15.jpg" alt="وصف الصورة">
+                                    <div class="card-text mt-3">
+                                        <span class="article-category">اقتصاد</span>
+                                        <h5 class="article-title">لوريم أيبسوم (Lorem Ipsum) هو ببساطة نص شكلي 2</h5>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col">
+                                <a href="./article.html" class="article-link">
+                                    <img src="./images/picture-14.jpg" alt="وصف الصورة">
+                                    <div class="card-text mt-3">
+                                        <span class="article-category">اقتصاد</span>
+                                        <h5 class="article-title">لوريم أيبسوم (Lorem Ipsum) هو ببساطة نص شكلي 2</h5>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="text-center my-5">
+                    <a href="article.html" class="btn button">عرض المزيد</a>
+
+                </div>
+
+
+                <hr>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container ">
+            <div class="row g-0">
+                <div class="col-md-3 col-sm-6 ">
+                    <h4 class="footer-title">من نحن</h4>
+                    <ul class="list-unstyled">
+                        <li class="mt-1"><a href="#" class="link-unstyled">من نحن</a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled">سياسة الخصوصية </a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled"> الشروط والاحكام</a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled">عن المنصة </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h4 class="footer-title">تواصل معنا </h4>
+                    <ul class="list-unstyled">
+                        <li class="mt-1"><a href="#" class="link-unstyled"> الاعلانات</a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled"> الصحافة </a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled"> وضائف شاغرة </a></li>
+                        <li class="mt-1"><a href="#" class="link-unstyled">كن مراسل </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <h4 class="footer-title"> وسائل التواصل </h4>
+                    <div class="pt-2 social-icon">
+                        <a href="#"> <i class="fa-brands fa-facebook fa-lg me-2"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter fa-lg me-2"></i> </a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-lg me-2"></i> </a>
+                        <a href="#"><i class="fa-brands fa-tiktok fa-lg me-2"></i> </a>
+                    </div>
+
+                    <div>
+                        <p>
+                            <br>تركيا - اسطنبول - الجسر الرابع
+                            <br>588 - 9998 - 528
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <h4 class="footer-title"> أخباري</h4>
+                    <div class="subscribe">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="ادخل بريدك الالكتروني"
+                                aria-label="Recipient's email" aria-describedby="button-addon2">
+                            <button class="btn btn-light" type="button" id="button-addon2">اشترك</button>
+                        </div>
+                    </div>
+
+                    <p>
+
+                        تصميم المهندس : هاكان يم
+                        <br> كافة الحقوق محفوظة© <span id="year"> </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/swiper.js"></script>
+
+
+</html>
